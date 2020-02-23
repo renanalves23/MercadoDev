@@ -7,4 +7,14 @@ const firebaseConfig = {
   messagingSenderId: "1084894545160",
   appId: "1:1084894545160:web:58f2af0d29066e15a718bd",
   measurementId: "G-QCPRHGCSBZ"
-};
+}
+
+const Rebase = require('re-base')
+const firebase = require('firebase/app')
+require('firebase/database')
+
+const app = firebase.initializeApp(firebaseConfig)
+const base = Rebase.createClass(app.database())
+
+
+export default base
