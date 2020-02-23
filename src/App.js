@@ -3,6 +3,8 @@ import logo from './logo.svg'
 
 import HeaderHome from './HeaderHome'
 import AnuncioHome from './AnuncioHome'
+import Footer from './Footer'
+import LinkCategoria from './LinkCategoria'
 
 
 
@@ -12,10 +14,19 @@ class App extends Component {
       <div className="App">
         <HeaderHome />
            <div className="container">
-           <AnuncioHome />
-           <AnuncioHome />
-           <AnuncioHome />
+              <h3>Últimos Anúncios</h3>
+              <div className="row">
+                  <AnuncioHome />
+                  <AnuncioHome />
+                  <AnuncioHome />
+              </div>  
+              <h3>Categorias</h3> 
+              <LinkCategoria />
+              <LinkCategoria />
+              <LinkCategoria />
+              <LinkCategoria />
            </div>
+           <Footer />
        </div>
 
     )
