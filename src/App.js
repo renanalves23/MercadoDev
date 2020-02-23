@@ -15,7 +15,8 @@ class App extends Component {
       super(props)
 
         this.state = {
-            categorias: []
+            categorias: [],
+            //anuncios
           }
           base.bindToState('categorias', {
             context: this,
