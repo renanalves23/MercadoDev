@@ -24,7 +24,8 @@ class App extends Component {
           })
           base.bindToState('anuncios', {
             context: this,
-            state: 'anuncios'
+            state: 'anuncios',
+            //regra de limite de anuncio
       })
   }
   render(){
